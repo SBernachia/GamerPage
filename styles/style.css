@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbf8fe;
+    font-family: 'Kanit', sans-serif;
+}
+
+/****** HEADER ******/
+.header {
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.img-logo {
+    width: 200px;
+}
+.nav-search {
+    background-color: #F5EDFC;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0 40px;
+    width: 250px;
+    height: 35px;
+    
+}
+.input-search {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    width: 200px;
+    height: 30px;
+    outline: none;
+}
+.submit-search {
+    background: none;
+    border: none;
+    margin: 0 5px;
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    color: #00020c;
+}
+.btn-login {
+    background: none;
+    width: 150px;
+    height: 40px;
+    color: #4e4997;
+    border-color: #4e4997;
+}
+
+
+/****** BANNER ******/
+#banner .carrousel-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+#banner .banners-container {
+    width: 300%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    transition: 0.5s all;
+    transform: translateX(0);
+}
+#banner .promo-container {
+    width: calc(100%/3);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+.promo-container .img-banner {
+    position: absolute;
+    width: calc(100%/3);
+    z-index: -1;
+}
+.promo-container .title-promo {
+    margin: 10px 5%;
+    font-size: 40px;
+    font-weight: 500;
+    color: #F5EDFC;
+
+}
+.promo-container .descr-promo {
+    margin: 5px 5%;
+    font-size: 20px;
+    font-weight: 300;
+    color: #F5EDFC;
+}
+.promo-container .btn-promo {
+    background-color: #4e4997;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 5px 5% 40px;
+    font-size: 20px;
+    color: #F5EDFC;
+}
+.btn-banner-conteiner {
+    position: relative;
+    margin: 0 auto;
+    top: -50px;
+    z-index: 1;
+}
+.btn-banner {
+    background-color: #F5EDFC;
+    margin: 0 50px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0 0 10px #00020c;
+    opacity: 0.5;
+}
+.btn-active {
+    opacity: 1;
+}
+
+
+
+/****** SECTION COMPUTACION ******/
+.titulo-categoria {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+.link-verMas {
+    text-decoration: none;
+    align-self: flex-end;
+}
+.productos-conteiner {
+    padding: 40px 100px;
+    display: flex;
+    flex-flow: column;
+}
+.contenedor-productos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.card-producto {
+    width: 200px;
+    height: 300px;
+}
+.img-producto {
+    width: 100%;
+}
+.titulo-producto {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 100;
+}
+.precio-producto {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.link-producto {
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+
+
+/****** FORMULARIO ******/
+#contactanos .conteiner {
+    background-color: #CAC8E4;
+    display: flex;
+    padding: 5% 5%;
+    flex-flow: row nowrap;
+}
+#contactanos .logo-conteiner {
+    width: 30%;
+}
+#contactanos .logo {
+    width: 60%;
+}
+#contactanos .links-conteiner {
+    width: 25%;
+}
+#contactanos .links {
+    margin: 0 0 20px;
+    display: block;
+    text-decoration: none;
+    color: #00020c;
+
+}
+#contactanos .form-conteiner {
+    width: 45%;
+}
+#contactanos .titulo {
+    margin: 0;
+    font-size: 20px;
+}
+#contactanos .input-conteiner {
+    display: flex;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    flex-flow: column;
+    background-color: #F5EDFC;
+}
+#contactanos .input-conteiner label {
+    color: #00020c;
+    opacity: 0.5;
+    font-size: 14px;
+}
+#contactanos .input-conteiner input {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 30px;
+}
+#contactanos .form-conteiner textarea {
+    background-color: #F5EDFC;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+}
+#contactanos .btn-submit {
+    background-color: #4e4997;
+    color: #F5EDFC;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 200px;
+    height: 60px;
+    border: none;
+}
+
+
+
+.footer {
+    text-align: center;
+    padding: 3%;
+}
+.footer p {
+    margin: 0;
+}
