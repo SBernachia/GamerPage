@@ -1,0 +1,34 @@
+{
+  "usuario": [
+    {
+      "nombre": "Sebastian Bernachia",
+      "email": "sbernachia@mail.com",
+      "id": 1,
+      "password": "admin"
+    },
+    {
+      "nombre": "Lionel Messi",
+      "email": "lmessi@mail.com",
+      "id": 2,
+      "password": "admin"
+    }
+  ],
+  "producto": [
+    {
+      "id": "",
+      "nombre": "asdas",
+      "categoria": "asdad",
+      "precio": "asdasdasd",
+      "descripcion": "asdasdasd",
+      "URLimagen": "asdasd"
+    },
+    {
+      "id": "9b4d6509-1abb-4da0-b1cd-d4fc0029bec8",
+      "nombre": "pc gamer",
+      "categoria": "pc",
+      "precio": "23",
+      "descripcion": "alta pc",
+      "URLimagen": "url image"
+    }
+  ]
+}

@@ -26,31 +26,31 @@
             <h2 class="form-productos__titulo">Agregar nuevo producto</h2>
             <div class="form-productos__container">
                 <label class="form-productos__titulo-input" for="">URL de imagen</label>
-                <input class="form-productos__input" type="text"> 
+                <input class="form-productos__input js-producto-URLimage" type="text"> 
             </div>
             <div class="form-productos__container">
                 <label class="form-productos__titulo-input" for="">Categoria</label>
-                <input class="form-productos__input" type="text">
+                <input class="form-productos__input js-producto-categoria" type="text">
             </div>
             <div class="form-productos__container">
                 <label class="form-productos__titulo-input" for="">Nombre del producto</label>
-                <input class="form-productos__input" type="text">
+                <input class="form-productos__input js-producto-nombre" type="text">
             </div>
             <div class="form-productos__container">
                 <label class="form-productos__titulo-input" for="">Precio del producto</label>
-                <input class="form-productos__input" type="text">
+                <input class="form-productos__input js-producto-precio" type="text">
             </div>
             <div class="form-productos__container">
                 <label class="form-productos__titulo-input" for="">Descripcion del producto</label>
-                <textarea class="form-productos__text-area" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="form-productos__text-area js-producto-descripcion" name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <button class="btn" type="submit">Agregar producto</button>
+            <button class="btn js-btn-producto" type="submit">Agregar producto</button>
         </form>
 
         <section id="contactanos">
             <div class="conteiner">
                 <div class="logo-conteiner">
-                    <img class="logo" src="/recursos/gamerpage-logo.png" alt="GamerPage-logo">
+                    <img class="logo" src="/assets/gamerpage-logo.png" alt="GamerPage-logo">
                 </div>
                 <div class="links-conteiner">
                     <a class="links" href="">Quienes somos</a>
@@ -79,6 +79,8 @@
         <p>2023</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/scripts/carrusel.js"></script>
+    <script type="module" src="/controllers/add-product.js"></script>
 </body>
 </html>
