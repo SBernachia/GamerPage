@@ -1,0 +1,27 @@
+.titulo-menu-administrador {
+    text-align: center;
+
+}
+.table-productos {
+    padding: 5% 10%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.table-productos_contenedor {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.table-productos_titulo {
+    width: 200px;
+}
+.table-producto_datos {
+    text-align: center;
+    width: 200px;
+}
+.table-producto_btn {
+    margin: 0 auto;
+    width: 60px;
+}

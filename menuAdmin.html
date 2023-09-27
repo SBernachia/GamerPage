@@ -6,10 +6,10 @@
     <title>GamersPage</title>
 
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/form-login.css">
+    <link rel="stylesheet" href="/styles/menu-administrador.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="header">
         <div class="header-container">
             <a href="/index.html"><img class="img-logo" src="assets/gamerpage-logo.png" alt="GamerPage-logo"></a>
@@ -21,14 +21,25 @@
     </header>
 
     <main>
-        <form class="form-login js-form-login" action="">
-            <h2 class="titulo-login" for="">Iniciar Sesion</h2>
-            <input class="form-login__input js-login-email" required type="email" placeholder="Escriba su correo electronico">
-            <input class="form-login__input js-login-password" required type="password" placeholder="Escriba su contraseña">
-            <button class="btn js-login-btn" type="submit">Entrar</button>
-        </form>
+        <section>
+            <h2 class="titulo-menu-administrador">Menu administrador</h2>
+            <table class="table-productos">
+                <thead>
+                    <tr class="table-productos_contenedor-titulo">
+                        <th class="table-productos_titulo">Nombre</th>
+                        <th class="table-productos_titulo">Categoria</th>
+                        <th class="table-productos_titulo">Precio</th>
+                        <th class="table-productos_titulo">Descripcion</th>
+                        <th class="table-productos_titulo">Imagen</th>
+                        <th class="table-productos_titulo">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody class="js-table-productos_cuerpo">
 
-
+                </tbody>
+            </table>
+        </section>
+        
         <section id="contactanos">
             <div class="conteiner">
                 <div class="logo-conteiner">
@@ -49,7 +60,7 @@
                             <label for="">Nombre</label>
                             <input type="text" maxlength="40" required>
                         </div>
-                        <textarea name="" id="" maxlength="120" required cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" maxlength="120" required></textarea>
                         <button class="btn-submit" type="submit">Enviar mensaje</button>
                     </form>
                 </div>
@@ -57,12 +68,11 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <p>Desarrollado por Sebastian Bernachia</p>
         <p>2023</p>
     </footer>
 
-
-    <script type="module" src="/controllers/login-controller.js"></script>
+    <script type="module" src="/controllers/productos-controller.js"></script>
 </body>
 </html>

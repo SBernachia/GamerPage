@@ -2,13 +2,6 @@ const listaUsuarios = () => {
     return fetch("http://localhost:3000/usuario").then(respuesta => respuesta.json());
 }
 
-const loginUsuario = (email, password) => {
-  return fetch("http://localhost:3000/usuario").then((respuesta) => {
-    const usuarios = respuesta.json();
-
-    
-  })
-}
 
 const listaProductos = () => {
   return fetch("http://localhost:3000/producto").then(response => response.json());
@@ -21,9 +14,16 @@ const addProducto = (nombre, categoria, precio, descripcion, URLimagen) => {
     body: JSON.stringify({id: uuid.v4(), nombre, categoria, precio, descripcion, URLimagen})
   });
 }
+
+const deleteProducto = (id) => {
+  return fetch(`http://localhost:3000/producto/${id}`,{
+    method: "DELETE"
+  });
+}
+
 export const clientService = {
   listaUsuarios,
   listaProductos,
   addProducto,
-  loginUsuario,
+  deleteProducto
 }

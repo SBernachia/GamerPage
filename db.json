@@ -15,14 +15,6 @@
   ],
   "producto": [
     {
-      "id": "",
-      "nombre": "asdas",
-      "categoria": "asdad",
-      "precio": "asdasdasd",
-      "descripcion": "asdasdasd",
-      "URLimagen": "asdasd"
-    },
-    {
       "id": "9b4d6509-1abb-4da0-b1cd-d4fc0029bec8",
       "nombre": "pc gamer",
       "categoria": "pc",
