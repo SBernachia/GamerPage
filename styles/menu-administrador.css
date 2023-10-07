@@ -21,6 +21,9 @@
     text-align: center;
     width: 200px;
 }
+.table-productos__datos__img {
+    width: 50%;
+}
 .table-producto_btn {
     margin: 0 auto;
     width: 60px;

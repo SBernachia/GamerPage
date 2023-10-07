@@ -1,0 +1,20 @@
+.seccion-producto {
+    padding: 5% 10%;
+    display: flex;
+    flex-flow: row;
+}
+.seccion-producto__img {
+}
+.contenedor--column-center {
+    
+}
+.contenedor--column {
+    padding: 10%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+.seccion-producto__titulo {
+    font-size: 24px;
+    margin: 15px 0 5px;
+}

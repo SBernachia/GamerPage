@@ -1,7 +1,14 @@
 import { clientService } from "../services/client-services.js";
 
+const btnDeslegar = document.querySelector(".js-btn-desplegar-form");
+
+btnDeslegar.addEventListener("click",() => {
+    const form = document.querySelector(".form-productos");
+    form.classList.toggle("expand");
+})
+
 const crearProducto = (productos) => {
-    productos.forEach(({id, nombre, categoria, precio, descripcion, urlImagen}) => {
+    productos.forEach(({id, nombre, categoria, precio, descripcion, URLimagen}) => {
         const tablaBody = document.querySelector(".js-table-productos_cuerpo");
         const tr = document.createElement("tr");
         const contenido = `
@@ -9,9 +16,9 @@ const crearProducto = (productos) => {
         <td class="table-producto_datos">${categoria}</td>
         <td class="table-producto_datos">${precio}</td>
         <td class="table-producto_datos">${descripcion}</td>
-        <td class="table-producto_datos"><img src="${urlImagen}"></img></td>
+        <td class="table-producto_datos"><img class="table-productos__datos__img" src="${URLimagen}"></img></td>
         <td class="table-producto_datos">
-            <button class="table-producto_btn js-productos-btnEditar">Editar</button>
+            <button id="${id}" class="table-producto_btn js-productos-btnEditar">Editar</button>
             <button id="${id}" class="table-producto_btn js-productos-btnEliminar">Eliminar</button>
         </td>
         `
@@ -26,6 +33,13 @@ const crearProducto = (productos) => {
             clientService.deleteProducto(btnEliminar.id).then(() => {
                 console.log("producto borrado");
             });
+        });
+
+        const btnEditar = document.querySelector(".js-productos-btnEditar");
+        btnEditar.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            window.location.href = `/editarProducto.html?id=${btnEditar.id}`;
         });
     });
 }

@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/menu-administrador.css">
+    <link rel="stylesheet" href="/styles/form-productos.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,6 +24,37 @@
     <main>
         <section>
             <h2 class="titulo-menu-administrador">Menu administrador</h2>
+            
+            <div class="add-producto-container">
+                <button class="btn-desplegar-form js-btn-desplegar-form">Agregar nuevo producto</button>
+                <div class="form-productos-container">
+                    <form class="form-productos" action="">
+                        <div class="form-productos__container">
+                            <label class="form-productos__titulo-input" for="">URL de imagen</label>
+                            <input required class="form-productos__input js-producto-URLimage" type="text"> 
+                        </div>
+                        <div class="form-productos__container">
+                            <label class="form-productos__titulo-input" for="">Categoria</label>
+                            <input required class="form-productos__input js-producto-categoria" type="text">
+                        </div>
+                        <div class="form-productos__container">
+                            <label class="form-productos__titulo-input" for="">Nombre del producto</label>
+                            <input required class="form-productos__input js-producto-nombre" type="text" maxlength="20">
+                        </div>
+                        <div class="form-productos__container">
+                            <label class="form-productos__titulo-input" for="">Precio del producto</label>
+                            <input required class="form-productos__input js-producto-precio" type="number">
+                        </div>
+                        <div class="form-productos__container">
+                            <label class="form-productos__titulo-input" for="">Descripcion del producto</label>
+                            <textarea required class="form-productos__text-area js-producto-descripcion" name="" id="" maxlength="150" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="btn js-btn-producto" type="submit">Agregar producto</button>
+                    </form>
+                </div>
+            </div>
+            
+            
             <table class="table-productos">
                 <thead>
                     <tr class="table-productos_contenedor-titulo">
@@ -73,6 +105,8 @@
         <p>2023</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="/controllers/productos-controller.js"></script>
+    <script type="module" src="/controllers/add-product.js"></script>
 </body>
 </html>

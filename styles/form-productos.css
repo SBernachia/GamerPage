@@ -1,9 +1,27 @@
-.form-productos {
+.add-producto-container {
     align-items: center;
-    background-color: #F5EDFC;
     display: flex;
     flex-flow: column nowrap;
-    padding: 5%;
+    padding: 2% 5%;
+}
+.btn-desplegar-form {
+    background-color: #F5EDFC;
+    color: #00020c;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    width: 620px;
+    height: 60px;
+}
+.form-productos {
+    transition: all 0.5s ease;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 500ms ease;
+}
+.expand {
+    max-height: 600px;
+    transition: all 500ms ease;
 }
 .form-productos__container {
     background-color: #fbf8fe;

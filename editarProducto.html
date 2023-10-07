@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamersPage</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/pag-producto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/index.html"><img class="img-logo" src="assets/gamerpage-logo.png" alt="GamerPage-logo"></a>
+            <div class="nav-search">
+                <input class="input-search" type="search" placeholder="¿Qué deseas buscar?">
+                <button class="submit-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> 
+        </div>
+    </header>
+
+    <main>
+        <div class="seccion-producto">
+            <div class="contenedor--column ">
+                <img class="seccion-producto__img" src="" alt="Imagen-producto">
+                <button></button>
+            </div>
+            <div class="contenedor--column">
+                <label class="seccion-producto__titulo" for="">Nombre</label>
+                <input class="seccion-producto__nombre" type="text">
+                <label class="seccion-producto__titulo" for="">Categoria</label>
+                <input class="seccion-producto__categoria" type="text">
+                <label class="seccion-producto__titulo" for="">Precio</label>
+                <input class="seccion-producto__precio" type="text">
+                <label class="seccion-producto__titulo" for="">Descripcion</label>
+                <textarea class="seccion-producto__descripcion" name="" id="" cols="30" rows="10"></textarea>
+            </div> 
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Desarrollado por Sebastian Bernachia</p>
+        <p>2023</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/controllers/editar-productos.js"></script>
+</body>
+</html>

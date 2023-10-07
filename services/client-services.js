@@ -4,7 +4,13 @@ const listaUsuarios = () => {
 
 
 const listaProductos = () => {
-  return fetch("http://localhost:3000/producto").then(response => response.json());
+  return fetch("http://localhost:3000/producto").then(response => response.json())
+}
+
+const getProducto = (id) => {
+  return fetch(`http://localhost:3000/producto/${id}`).then((response) => {
+    return response.json();
+  })
 }
 
 const addProducto = (nombre, categoria, precio, descripcion, URLimagen) => {
@@ -13,6 +19,14 @@ const addProducto = (nombre, categoria, precio, descripcion, URLimagen) => {
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({id: uuid.v4(), nombre, categoria, precio, descripcion, URLimagen})
   });
+}
+
+const editProducto = (id, nombre, categoria, precio, descripcion, URLimagen) => {
+  return fetch(`http://localhost:3000/producto/${id}`, {
+    method: "PUT",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({id, nombre, categoria, precio, descripcion, URLimagen})
+  })
 }
 
 const deleteProducto = (id) => {
@@ -25,5 +39,7 @@ export const clientService = {
   listaUsuarios,
   listaProductos,
   addProducto,
-  deleteProducto
+  deleteProducto,
+  editProducto,
+  getProducto
 }
