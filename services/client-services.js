@@ -25,7 +25,7 @@ const editProducto = (id, nombre, categoria, precio, descripcion, URLimagen) => 
   return fetch(`http://localhost:3000/producto/${id}`, {
     method: "PUT",
     headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({id, nombre, categoria, precio, descripcion, URLimagen})
+    body: JSON.stringify({nombre, categoria, precio, descripcion, URLimagen})
   })
 }
 

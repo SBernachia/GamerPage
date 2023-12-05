@@ -13,14 +13,10 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.header-container {
-    display: flex;
-    align-items: center;
-}
-.img-logo {
+.header__logo {
     width: 200px;
 }
-.nav-search {
+.header__search {
     background-color: #F5EDFC;
     display: flex;
     align-items: center;
@@ -30,7 +26,7 @@ body {
     height: 35px;
     
 }
-.input-search {
+.header__input-search {
     background: none;
     border: none;
     margin: 0 10px;
@@ -38,7 +34,7 @@ body {
     height: 30px;
     outline: none;
 }
-.submit-search {
+.header__submit-search {
     background: none;
     border: none;
     margin: 0 5px;
@@ -47,24 +43,31 @@ body {
     font-size: 16px;
     color: #00020c;
 }
-.btn-login {
-    background: none;
+.header__btn-login {
+    background-color: #4e4997;
+    border: none;
     width: 150px;
     height: 40px;
+    color: #F5EDFC;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.header__btn-login:hover {
+    background: none;
     color: #4e4997;
-    border-color: #4e4997;
+    border: 1px solid #4e4997;
 }
 
 
 /****** BANNER ******/
-#banner .carrousel-container {
+.carrousel {
     margin: 0 auto;
     width: 100%;
     display: flex;
     flex-flow: column;
     overflow: hidden;
 }
-#banner .banners-container {
+.carrousel__banners {
     width: 300%;
     height: 400px;
     overflow: hidden;
@@ -74,31 +77,31 @@ body {
     transition: 0.5s all;
     transform: translateX(0);
 }
-#banner .promo-container {
+.banner {
     width: calc(100%/3);
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
 }
-.promo-container .img-banner {
+.banner__img {
     position: absolute;
     width: calc(100%/3);
     z-index: -1;
 }
-.promo-container .title-promo {
+.banner__titulo {
     margin: 10px 5%;
     font-size: 40px;
     font-weight: 500;
     color: #F5EDFC;
 
 }
-.promo-container .descr-promo {
+.banner__descripcion {
     margin: 5px 5%;
     font-size: 20px;
     font-weight: 300;
     color: #F5EDFC;
 }
-.promo-container .btn-promo {
+.banner__btn {
     background-color: #4e4997;
     border: none;
     width: 200px;
@@ -115,36 +118,39 @@ body {
 }
 .btn-banner {
     background-color: #F5EDFC;
-    margin: 0 50px;
-    width: 10px;
-    height: 10px;
+    padding: 0;
+    margin: 0 20px;
+    width: 6px;
+    height: 6px;
     border-radius: 100%;
     border: none;
-    box-shadow: 0 0 10px #00020c;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .btn-active {
-    opacity: 1;
+    width: 8px;
+    height: 8px;
+    opacity: 0.8;
 }
 
 
 
-/****** SECTION COMPUTACION ******/
-.titulo-categoria {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 500;
-}
-.link-verMas {
-    text-decoration: none;
-    align-self: flex-end;
-}
-.productos-conteiner {
+/****** SECTCION PRODUCTOS ******/
+.categoria {
     padding: 40px 100px;
     display: flex;
     flex-flow: column;
 }
-.contenedor-productos {
+.categoria__titulo {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+.categoria__verMas {
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.categoria__productos {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -153,20 +159,20 @@ body {
     width: 200px;
     height: 300px;
 }
-.img-producto {
+.card-producto__img {
     width: 100%;
 }
-.titulo-producto {
+.card-producto__titulo {
     margin: 5px 0;
     font-size: 18px;
     font-weight: 100;
 }
-.precio-producto {
+.card-producto__precio {
     margin: 0;
     font-size: 20px;
     font-weight: 500;
 }
-.link-producto {
+.card-producto__link {
     margin: 0;
     text-decoration: none;
     
@@ -247,4 +253,32 @@ body {
 }
 .footer p {
     margin: 0;;
+}
+
+/* CONTENEDORES */
+.conenedor--row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.contenedor--column {
+    padding: 5%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* BOTONES */
+.btn--borde-violeta{
+    background: none;
+    width: 150px;
+    height: 40px;
+    color: #4e4997;
+    border-color: #4e4997;
+    cursor: pointer;
+}
+.btn--violeta {
+    color: #F5EDFC;
+    background-color: #4e4997;
 }

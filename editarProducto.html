@@ -12,33 +12,44 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-container">
-            <a href="/index.html"><img class="img-logo" src="assets/gamerpage-logo.png" alt="GamerPage-logo"></a>
-            <div class="nav-search">
-                <input class="input-search" type="search" placeholder="¿Qué deseas buscar?">
-                <button class="submit-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div> 
-        </div>
-    </header>
-
-    <main>
-        <div class="seccion-producto">
-            <div class="contenedor--column ">
-                <img class="seccion-producto__img" src="" alt="Imagen-producto">
-                <button></button>
-            </div>
-            <div class="contenedor--column">
-                <label class="seccion-producto__titulo" for="">Nombre</label>
-                <input class="seccion-producto__nombre" type="text">
-                <label class="seccion-producto__titulo" for="">Categoria</label>
-                <input class="seccion-producto__categoria" type="text">
-                <label class="seccion-producto__titulo" for="">Precio</label>
-                <input class="seccion-producto__precio" type="text">
-                <label class="seccion-producto__titulo" for="">Descripcion</label>
-                <textarea class="seccion-producto__descripcion" name="" id="" cols="30" rows="10"></textarea>
+        <div class="conenedor--row">
+            <a href="/index.html"><img class="header__logo" src="assets/gamerpage-logo.png" alt="GamerPage-logo"></a>
+            <div class="header__search">
+                <input class="header__input-search" type="search" placeholder="¿Qué deseas buscar?">
+                <button class="header__submit-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div> 
         </div>
         
+        
+        <a href="menuAdmin.html"><button class="btn--borde-violeta">Menu Administrador</button></a>
+    </header>
+
+    <main>
+        <h2 class="titulo-edit-product">Edicion de producto</h2>
+        <div class="seccion-producto">
+            
+            <div class="contenedor--column ">
+                <img class="seccion-producto__img" src="" alt="Imagen-producto">
+                <label class="seccion-producto__titulo" for="">Ingresa una URL de una imagen</label>
+                <input class="form__input js-url-img" type="text">
+                <p class="seccion-producto__texto">o</p>
+                <button class="btn--violeta btn-cargar-imagen">Cargar una Imagen</button>
+            </div>
+            
+            <form class="form contenedor--column" action="">
+                <label class="seccion-producto__titulo" for="">Nombre</label>
+                <input class="form__input seccion-producto__nombre" type="text">
+                <label class="seccion-producto__titulo" for="">Categoria</label>
+                <input class="form__input seccion-producto__categoria" type="text">
+                <label class="seccion-producto__titulo" for="">Precio</label>
+                <input class="form__input seccion-producto__precio" type="text">
+                <label class="seccion-producto__titulo" for="">Descripcion</label>
+                <textarea class="form__textarea seccion-producto__descripcion" name="" id="" cols="30" rows="10"></textarea>
+            </form>
+             
+        </div>
+        
+        <button class="btn--grande js-btn-guardarEdicion">Guardar Edicion</button>
     </main>
 
     <footer>

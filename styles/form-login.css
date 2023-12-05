@@ -31,6 +31,7 @@
     width: 410px;
     height: 50px;
     border: none;
+    cursor: pointer;
 }
 .titulo-login {
     color: #00020c;

@@ -1,5 +1,5 @@
-let imgConteiner = document.querySelector(".banners-container");
-let puntos = document.querySelectorAll(".btn-banner");
+const imgConteiner = document.querySelector(".carrousel__banners");
+const puntos = document.querySelectorAll(".btn-banner");
 
 puntos.forEach((cadaPunto, i) => {
     puntos[i].addEventListener("click", () => {
